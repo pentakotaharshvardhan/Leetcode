@@ -9,7 +9,7 @@ class Solution {
             if(nums[mid]>=0) end=mid-1;
             else start=mid+1;
         }
-        System.out.println(end);
+        //System.out.println(end);
         min=end;
         start=0;
         end=nums.length-1;
@@ -19,7 +19,7 @@ class Solution {
             else start=mid+1;
         }
         max=start;
-        System.out.println(start);
+        //System.out.println(start);
         return Math.max(Math.abs(min-0+1),Math.abs(nums.length-max));
     }
 }
