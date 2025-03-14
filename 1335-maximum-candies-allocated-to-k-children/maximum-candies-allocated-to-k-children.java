@@ -1,10 +1,8 @@
 class Solution {
     public int maximumCandies(int[] candies, long k) {
-        Arrays.sort(candies);
-        int max=Integer.MIN_VALUE;
+        //Arrays.sort(candies);
         long sum=0;
         for(int i:candies){
-            max=Math.max(max,i);
             sum+=i;
         }
         //if(sum<k) return 0;
