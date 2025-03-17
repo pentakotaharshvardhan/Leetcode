@@ -14,8 +14,8 @@ class Solution {
         while(start<=end){
             mid=start+(end-start)/2;
             count=groups(ranks,mid);
-            System.out.println(start+" "+mid+" "+end);
-            System.out.println(count);
+            //System.out.println(start+" "+mid+" "+end);
+            //System.out.println(count);
             if(count<cars) start=mid+1;
             else end=mid-1;
         }
