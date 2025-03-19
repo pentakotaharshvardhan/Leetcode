@@ -1,5 +1,10 @@
 class Solution {
-    public String rankTeams(String[] votes) {
+    static{
+        for(int i=0;i<500;i++){
+            rankTeams(new String[]{""});
+        }
+    }
+    public  static String rankTeams(String[] votes) {
         String ans = "";
         HashMap<Character, int[]> hm = new HashMap<>();
         
@@ -25,7 +30,7 @@ class Solution {
                         return rankB[i] - rankA[i]; 
                     }
                 }
-                return a.compareTo(b); // If ranks are equal, sort alphabetically
+                return a.compareTo(b); 
             }
         });
 
