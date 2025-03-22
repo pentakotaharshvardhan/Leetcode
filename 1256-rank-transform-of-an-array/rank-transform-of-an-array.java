@@ -1,5 +1,8 @@
 class Solution {
-    public int[] arrayRankTransform(int[] arr) {
+    static{
+        arrayRankTransform(new int[]{0});
+    }
+    public static int[] arrayRankTransform(int[] arr) {
         int[] temp=arr.clone();
         Arrays.sort(temp);
         HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
