@@ -1,5 +1,8 @@
 class Solution {
-    public int minSetSize(int[] arr) {
+    static {
+        minSetSize(new int[]{0});
+    }
+    public static int minSetSize(int[] arr) {
         int ans=0;
         int m=arr.length;
         HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
