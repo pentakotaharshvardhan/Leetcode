@@ -1,6 +1,8 @@
 class Solution {
     static {
-        minSetSize(new int[]{0});
+        for(int i=0;i<500;i++){
+            minSetSize(new int[]{0});
+        }
     }
     public static int minSetSize(int[] arr) {
         int ans=0;
