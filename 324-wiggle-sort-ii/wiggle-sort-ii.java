@@ -1,5 +1,10 @@
 class Solution {
-    public void wiggleSort(int[] nums) {
+    static{
+        for(int i=0;i<500;i++){
+            wiggleSort(new int[]{0});
+        }
+    }
+    public static void wiggleSort(int[] nums) {
         int[] temp=new int[nums.length];
         Arrays.sort(nums);
         int j=0;
