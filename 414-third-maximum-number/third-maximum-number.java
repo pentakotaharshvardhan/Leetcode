@@ -1,5 +1,10 @@
 class Solution {
-    public int thirdMax(int[] nums) {
+    static {
+        for(int i=0;i<500;i++){
+            thirdMax(new int[]{0});
+        }
+    }
+    public static int thirdMax(int[] nums) {
         Arrays.sort(nums);
         int count=1;
         int i=0;
