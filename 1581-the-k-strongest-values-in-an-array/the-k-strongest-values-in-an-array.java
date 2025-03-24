@@ -20,7 +20,7 @@ class Solution {
             }
         });
 
-        System.out.println(Arrays.toString(arr1));
+        //System.out.println(Arrays.toString(arr1));
         for(int i=0;i<k;i++){
             ans[i]=arr1[i];
         }
