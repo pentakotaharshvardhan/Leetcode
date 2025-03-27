@@ -12,7 +12,7 @@ class Solution {
             x/=10;
         }
         String str1=str.toString();
-        System.out.println(str1);
+        //System.out.println(str1);
         long m=Long.parseLong(str1.toString());
         if(Integer.MIN_VALUE>m || Integer.MAX_VALUE<m) return 0;
         return isnegat?-1*(int)m:(int)m;
