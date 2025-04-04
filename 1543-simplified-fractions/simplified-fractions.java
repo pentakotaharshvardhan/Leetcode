@@ -7,9 +7,9 @@ class Solution {
     public static List<String> simplifiedFractions(int n) {
         List<String> ans=new ArrayList<>();
         for(int i=1;i<n;i++){
-            for(int j=i+1;j<=n;j++){
-                if(i==j) continue;
-                if(gcd(i,j)==1) ans.add(""+i+"/"+j);
+            for(int j=2;j<=n;j++){
+                //if(i==j) continue;
+                if(i<j && gcd(i,j)==1) ans.add(""+i+"/"+j);
             }
         }
         return ans;
