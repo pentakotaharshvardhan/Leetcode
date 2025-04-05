@@ -6,7 +6,7 @@ class Solution {
             int num=rectangles[i][0];
             int den=rectangles[i][1];
             double frac=den*1.0/num;
-            System.out.println(frac);
+            //System.out.println(frac);
             hm.put(frac,hm.getOrDefault(frac,(long)0)+1);
         }
         for(double n:hm.keySet()){
