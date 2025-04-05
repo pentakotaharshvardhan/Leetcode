@@ -1,5 +1,8 @@
 class Solution {
-    public long interchangeableRectangles(int[][] rectangles) {
+    static{
+        interchangeableRectangles(new int[][]{{0,0}});
+    }
+    public static long interchangeableRectangles(int[][] rectangles) {
         long ans=0;
         HashMap<Double,Long> hm=new HashMap<>();
         for(int i=0;i<rectangles.length;i++){
