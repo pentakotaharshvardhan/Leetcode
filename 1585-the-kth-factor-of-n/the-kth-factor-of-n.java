@@ -10,7 +10,7 @@ class Solution {
                 arr.add(n/arr.get(i));
             }
         }
-        System.out.println(arr);
+        //System.out.println(arr);
         if(arr.size()>=k) return arr.get(k-1);
         return -1;
     }
