@@ -13,10 +13,10 @@ class Solution {
         //     odd=n/2;
         // }
         long evenp = modPow(5, even, mod);
-        System.out.println(evenp);
+        //System.out.println(evenp);
 
         long oddp = modPow(4, odd, mod);
-        System.out.println(oddp);
+        //System.out.println(oddp);
 
         return (int)((evenp * oddp) % mod);
 
