@@ -1,11 +1,12 @@
 class Solution {
     public int differenceOfSums(int n, int m) {
         int sum=0;
-        int sum1=0;
-        for(int i=1;i<=n;i++){
-            if(i%m==0) sum+=i;
-            else sum1+=i;
+        int i=n/m;
+        for(int j=1;j<=i;j++){
+            sum+=m*j;
         }
-        return sum1-sum;
+        System.out.println(sum);
+        int s=(n*(n+1)/2)-sum;
+        return s-sum;
     }
 }
