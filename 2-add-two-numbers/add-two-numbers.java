@@ -60,7 +60,7 @@ class Solution {
                 t.next=temp;
             }
             carry=(l2.val+carry)/10;
-            System.out.println(carry);
+            //System.out.println(carry);
             l2=l2.next;
         }
         if(carry!=0){
