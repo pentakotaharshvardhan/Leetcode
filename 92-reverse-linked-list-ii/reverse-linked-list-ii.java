@@ -23,7 +23,7 @@ class Solution {
         ListNode rightNode=forward;
         forward=forward.next;
         rightNode.next=null;
-        System.out.println(leftNode.val);
+        //System.out.println(leftNode.val);
         rightNode=reverse(leftNode);
         if(left!=1) prev.next=rightNode;
         else head=rightNode;
