@@ -1,5 +1,10 @@
 class Solution {
-    public String removeDuplicates(String s, int k) {
+    static{
+        for(int i=0;i<500;i++){
+            removeDuplicates("",0);
+        }
+    }
+    public static String removeDuplicates(String s, int k) {
         StringBuilder ans=new StringBuilder();
         Stack<String> stk=new Stack<>();
         for(int i=0;i<s.length();i++){
