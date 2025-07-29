@@ -17,7 +17,7 @@ class Solution {
             stk.pop();
             k--;
         }
-        while(!stk.isEmpty()) ans.append(""+stk.pop());
+        while(!stk.isEmpty()) ans.append(stk.pop());
         while(ans.length()>0 && ans.charAt(ans.length()-1)=='0') ans.deleteCharAt(ans.length()-1);
         if(ans.length()==0) ans.append("0");
         return ans.reverse().toString();
