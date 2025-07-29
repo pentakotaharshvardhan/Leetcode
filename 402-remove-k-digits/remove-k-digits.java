@@ -12,7 +12,7 @@ class Solution {
             }
             stk.push(ch);  
         }
-        System.out.println(stk);
+        //System.out.println(stk);
         while(!stk.isEmpty() && k>0) {
             stk.pop();
             k--;
