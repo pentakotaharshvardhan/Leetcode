@@ -8,7 +8,7 @@ class Solution {
             ch=='a' ||ch=='e' ||ch=='i' ||ch=='o' ||ch=='u') ls.add(ch);
         }
         Collections.sort(ls);
-        System.out.println(ls);
+        //System.out.println(ls);
         int k=0;
         if(ls.size()<=0) return s;
         for(int i=0;i<s.length();i++){
