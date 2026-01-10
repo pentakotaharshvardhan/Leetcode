@@ -1,23 +1,25 @@
 class Solution {
     public int minimumDeleteSum(String s1, String s2) {
-        int[][] dp=new int[s1.length()+1][s2.length()+1];
-        for(int i=1;i<=s1.length();i++){
-            dp[i][0]=(int)s1.charAt(i-1)+dp[i-1][0];
+        int m = s1.length(), n = s2.length();
+        int tot = 0;
+        for(int i =0; i<m; i++){
+            tot+=(int)s1.charAt(i);
         }
-        for(int i=1;i<=s2.length();i++){
-            dp[0][i]=(int)s2.charAt(i-1)+dp[0][i-1];
+        for(int i =0; i<n; i++){
+            tot+=(int)s2.charAt(i);
         }
-        // for(int i=1;i<=s2.length();i++){
-        //     System.out.print(dp[0][i]+" ");
-        // }
-        for(int i=1;i<=s1.length();i++){
-            for(int j=1;j<=s2.length();j++){
-                Integer ch1=(int)s1.charAt(i-1)+dp[i-1][j];
-                Integer ch2=(int)s2.charAt(j-1)+dp[i][j-1];
-                if(s1.charAt(i-1)==s2.charAt(j-1)) dp[i][j]=dp[i-1][j-1];
-                else dp[i][j]=Math.min(ch1,ch2);
+        int[][] dp = new  int[m+1][n+1];
+
+        for(int i = 1; i<=m; i++){
+            for(int j = 1; j<=n; j++){
+                dp[i][j] = Math.max(dp[i][j-1], dp[i-1][j]);
+                if(s1.charAt(i-1) == s2.charAt(j-1)){
+                    dp[i][j] = Math.max(dp[i-1][j-1]+(int)s1.charAt(i-1), dp[i][j]);
+                }
             }
         }
-        return dp[s1.length()][s2.length()];
+        // dp(s1,m,s2,n);
+        return tot-2*dp[m][n];
     }
+
 }
