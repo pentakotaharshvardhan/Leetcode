@@ -21,7 +21,7 @@ class Solution {
                 else if(!(nums[i]!=t1))ans+=1;
                 continue;
             }
-            System.out.println(nums[i]+" "+t1);
+            //System.out.println(nums[i]+" "+t1);
             ans+=(t1-nums[i]);
         }
         return ans;
