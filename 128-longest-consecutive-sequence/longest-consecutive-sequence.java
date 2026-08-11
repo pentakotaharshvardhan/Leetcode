@@ -4,18 +4,17 @@ class Solution {
         for(int i:nums){
             hs.add(i);
         }
-        int ans=0;
-        for(int i:hs){
-            int count=1;
-            if(!hs.contains(i-1)){
-                int t1=i;
-                while(hs.contains(t1+1)){
-                    t1+=1;
-                    count++;
+        int max=0;
+        for(int num:hs){
+            int temp=0;
+            if(!hs.contains(num+1)){
+                while(hs.contains(num)){
+                    num--;
+                    temp++;
                 }
+                max=Math.max(temp,max);
             }
-            ans=Math.max(ans,count);
         }
-        return ans;
+        return max;
     }
 }
