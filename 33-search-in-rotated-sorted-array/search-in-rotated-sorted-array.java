@@ -23,7 +23,8 @@ class Solution {
         while(low<high){
             int mid=low+(high-low)/2;
             if(nums[high]<nums[mid]) low=mid+1;
-            else high=mid;
+            else if(nums[high]>nums[mid]) high=mid;
+            else high--;
         }
         return low;
     }
