@@ -28,7 +28,7 @@ class Solution {
                     stk.push(temp+"");
                 }
             }
-            System.out.println(stk);
+            //System.out.println(stk);
         }
         return Integer.parseInt(stk.pop());
     }
