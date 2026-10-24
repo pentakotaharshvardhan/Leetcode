@@ -2,7 +2,7 @@ class Solution {
     public int resilientSubarray(int[] nums, int k) {
         int[] arr=new int[nums.length];
         for(int i=0;i<nums.length;i++) arr[i]=nums[i]%k;
-        System.out.println(Arrays.toString(arr));
+        //System.out.println(Arrays.toString(arr));
         int i=0;
         int max=1;
         int j=0;
@@ -13,7 +13,7 @@ class Solution {
             }
         }
         max=Math.max(max,j-i);
-        System.out.println(max);
+        //System.out.println(max);
         i=0;
         j=0;
         int nex=arr[0];
@@ -22,7 +22,7 @@ class Solution {
                 if(((j-i)*nex)%k==0){
                     max=Math.max(max,(j-i+1));
                 }
-                System.out.println(i+" "+j+" "+max);
+                //System.out.println(i+" "+j+" "+max);
             }
             else{
                 i=j;
